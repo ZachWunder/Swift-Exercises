@@ -189,7 +189,8 @@ var alice = yB * (bob + xB) - xB
 var xA = 17
 
 // your code here
-var oranges = xA % 3
+var oranges = (xA / 5) * 3
+var apples = xA % 5
 
 //////////////////////////////////////////////////
 /////////         Boys and Girls         /////////
@@ -208,7 +209,8 @@ var numberOfBoys = 20.0
 var numberOfGirls = 60.0
 
 // your code here
-var percentBoys = Int(numberOfBoys / numberOfGirls * 100)
+var totalStudents = numberOfBoys + numberOfGirls
+var percentBoys = (numberOfBoys / totalStudents) * 100
 print(percentBoys)
-var percentGirls = 100 - percentBoys
+var percentGirls = (numberOfGirls / totalStudents) * 100
 print(percentGirls)
