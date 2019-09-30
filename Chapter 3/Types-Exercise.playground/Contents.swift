@@ -13,7 +13,7 @@ var a = 2.0
 var b = 5.0
 
 // your code here
-
+print( (a + b) / 2)
 
 
 ////////////////////////////////////////////////////
@@ -30,7 +30,7 @@ var midtermGrade = 4.0
 var projectGrade = 3.0
 
 // your code here
-
+var grade = ((finalsGrade * 50) + (midtermGrade * 20) + (projectGrade * 30) / (finalsGrade + midtermGrade + projectGrade)) / 100
 
 
 ///////////////////////////////////////////
@@ -50,7 +50,8 @@ var mealCost:Double = 3.5
 var tip:Int = 20
 
 // your code here
-
+var cost = (mealCost * (Double(tip) / 100)) + mealCost
+print(cost)
 
 
 ////////////////////////////////////////////
@@ -64,7 +65,7 @@ var tip:Int = 20
 var number = 5.1517
 
 // your code here
-
+var roundedNumber = Int(number)
 
 /////////////////////////////////////////////////
 /////////         Above average         /////////
@@ -83,7 +84,12 @@ var grade3 = 5.0
 var yourGrade = 8.0
 
 // your code here
-
+var classAverage = (grade1 + grade2 + grade3 + yourGrade) / 4
+if yourGrade > classAverage {
+    print("Above Average")
+} else {
+    print("Below Average")
+}
 
 //////////////////////////////////////////
 /////////         Fields         /////////
@@ -98,4 +104,6 @@ var wheatYield:Double = 7.5
 var weatherWasGood:Bool = true
 
 // your code here
-
+wheatYield = weatherWasGood ? (wheatYield * 1.5) : wheatYield
+var totalHarvest = Double(numberOfFields) * wheatYield
+print(totalHarvest)
